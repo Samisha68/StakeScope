@@ -55,7 +55,7 @@ export function StakeDistribution() {
                 outerRadius={80}
                 label
               >
-                {data?.map((entry: any, index: number) => (
+                {data?.map((entry: { name: string; value: number }, index: number) => (
                   <Cell key={`cell-${index}`} fill={COLORS[index % COLORS.length]} />
                 ))}
               </Pie>
